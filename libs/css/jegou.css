@@ -1,0 +1,30 @@
+.title-slide {
+  background-color: #FAFAFA;
+  background-image: url(../../img/gravel.png);
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.logo1{
+position: absolute;
+  bottom: 0px;
+  right:140px;
+  width:160px;
+  opacity:0.8;
+  }
+
+.logo2{
+  position: absolute;
+    bottom: -20px;
+    right:70px;
+    width:60px;
+    opacity:0.8;
+    }
+
+.banner{
+position: absolute;
+  top: -20px;
+  left:0px;
+  width:100%;
+  }
+  
