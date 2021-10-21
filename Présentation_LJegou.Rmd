@@ -24,17 +24,16 @@ library(fontawesome)
 
 class: center title-slide
 
-<br><br><br><br><br><br>
+<br><br><br><br><br>
 
 `r fa("eye", fill = "darkblue", height = "4em")`
-# **Les images**
-## Prenons un peu de recul
+# **Les images cartographiques**
+## Leur lecture, leur fonctionnement :<br> prenons un peu de recul
 
-<br><br>
 
 #### École thématique TRANSCARTO, Aussois
 
-<br><br>
+<br>
 
 .left[Laurent Jégou - jegou@univ-tlse2.fr]
 .left[UT2J / UMR LISST-Cieu, 21 oct 2021]
@@ -56,15 +55,15 @@ class: middle
 
 --
 
-2. La **lisibilité** de l'image, comment l'améliorer ?
+2. La **lisibilité** de l'image : principes
 
 --
 
-3. Le **support web**¨ : animation, interaction
+3. Comment **l'évaluer** et **l'améliorer** ?
 
 --
 
-4. Application sur des images de l'école **TransCarto**
+4. De **nouveaux supports** pour mieux accompagner les lecteurs
 
 ---
 # 1. Le contexte
@@ -73,7 +72,7 @@ Pour prendre du recul, il faut s'interroger sur *l'acte de cartographier*, ses a
 
 --
 
-Pendant longtemps, la production de cartes a été comprise, sous-entendue, selon un contexte de communication (théorie de l'information).
+Pendant longtemps, la production de cartes a été comprise, sous-entendue, selon un contexte de communication (théorie de l'information, C. Shannon).
 
 ---
 #Le paradigme de la communication
@@ -102,7 +101,7 @@ class: middle
 
 --
 
-- Elle devait être rapidement lisible, donc utiliser des formes simples
+- Elle devait être rapidement lisible, donc utiliser des formes simples et reconnaissables
 
 >**&#8594;** L'enjeu est donc du côté du langage graphique, à maîtriser par le cartographe et à apprendre du côté des lecteurs.
 
@@ -118,21 +117,27 @@ class: middle
 
 Cette façon de concevoir la production de carte est souvent sous-entendue, elle constitue un *paradigme*, qui est logiquement remis en cause par les évolutions des *pratiques* et des *techniques*.
 
-Elle présente la cartographie selon un angle *positiviste*, voire scientiste, ce qui évacue toute une série d'autres fonctionnements de la carte...
+Elle présente la cartographie selon un angle *positiviste*, voire scientiste, ce qui évacue toute une série d'autres *fonctionnements* de la carte...
+
+[Un ouvrage essentiel : "Cartography, the Ideal and its History" de M.H. Edney](https://journals.openedition.org/mappemonde/1711)
+
+.center[![M.H. Edney](img/edney_cartography_the_ideal.jpg)]
 
 ---
 
-- la carte **outil de pouvoir**, performative, de propagande, menteuse (vision *post-moderniste*, B. Harley)
+- la carte **performative**, qui vise à faire réagir, de propagande, rhétorique (vision *post-moderniste*, B. Harley)
 
 .center[![Brian J. Harley, The New Nature of Maps](img/thenewnatureofmaps.jpg)]
 > Brian J. Harley, The New Nature of Maps, 2001
 
 ---
 
-- la carte comme **outil d'analyse**, moyen de découvrir des phénomènes et des relations, dans un *processus d'exploration* (paradigme *analytique*, W. Tobler, K. Clarke, vers la géomatique et les SIG)
+- la carte comme **outil d'analyse**, moyen de découvrir des phénomènes et des relations, dans un *processus d'exploration*, de **&#8594;** **transformation** (paradigme *analytique*, W. Tobler, K. Clarke, vers la géomatique et les SIG)
 
-.center[![K. Clarke, Analytical and Computer Cartography](img/clarke.jpg)]
-> K. Clarke, Analytical and Computer Cartography, 1990.
+.center[![W. Tobler et K. Clarke](img/ToblerClarke.jpg)]
+
+> W. Tobler et K. Clarke, Analytical and Computer Cartography, 1990.
+
 ---
 
 - la carte comme **outil d'organisation d'une communauté** sur son territoire (paradigme *participatif*, M. Noucher, Th. Joliveau)
@@ -142,20 +147,20 @@ Elle présente la cartographie selon un angle *positiviste*, voire scientiste, c
 
 ---
 
-- la carte comme **outil de visualisation de *son* propre territoire**, adaptée, mise à jour et centrée sur sa position (paradigme de *l'égo-cartographie*).
+- la carte comme **outil de visualisation de *son* propre territoire et de navigation**, adaptée et centrée sur sa position actuelle (paradigme de *l'égo-cartographie*).
 
 .center[![Smarthpone](img/maps-google-maps-navigation-maps-app-map-location.jpg)]
 
 ---
 
-- la carte *décorative* a valeur esthétique, historique, émotive...
+- la carte *décorative* a valeur esthétique, historique, émotive, (d'où son utilisation dans des publicités...).
 
 .center[![Carte ancienne Air France L. Boucher 1964](img/airfrance_boucher_bleu.jpg)]
 >L. Boucher, affiche publicitaire Air France, 1937
 
 ---
 
-- la carte *imaginaire* ou *poétique*, aussi à valeur esthétique.
+- la carte *imaginaire* ou *poétique*, aussi à valeur esthétique, rhétorique, qui vise à faire réfléchir. Souvent, on ne la comprend pas immédiatement.
 
 .center[![Terra Forma](img/terra_forma.jpg)]
 > Terra Forma, F. Aït-Touati, A. Arènes, A. Grégoire, éditions B42, 2019.
@@ -163,9 +168,11 @@ Elle présente la cartographie selon un angle *positiviste*, voire scientiste, c
 ---
 class: middle
 
-#Prendre du recul
+# Prendre du recul
 
-Ces réflexions permettent se poser des questions de contexte, pour mieux comprendre les questions de lisibilité :
+.center[`r fa("question-circle", fill = "darkblue", height = "2em")`]
+
+Ces réflexions permettent se poser des questions de **contexte**, pour mieux comprendre les questions de lisibilité :
 
 --
 
@@ -173,46 +180,48 @@ Ces réflexions permettent se poser des questions de contexte, pour mieux compre
 
 --
 
-- À quoi doit *servir* ma carte ?
+- À quoi doit *servir* ma carte, comment doit-on y réagir ?
 
 --
 
-- À quel *public* est-elle destinée ?
+- À quel *public* est-elle destinée ? Que doit-il savoir pour la comprendre ?
 
 --
 
-- Comment *fonctionne* ma carte ?
+- Au final, comment *fonctionne* ma carte ?
 
 ---
 class: middle
 
-**&#8594;** Selon ces différents positionnements, la carte va devoir s'adapter pour être **efficace**, au sens de J. Bertin (communication), ou, plus généralement du design, c'est à dire *accomplir sa fonction*.
+**&#8594;** Selon ces différents positionnements, la carte va devoir s'adapter pour être **efficace**, au sens de J. Bertin (communication), ou, plus généralement du *design*, c'est à dire *accomplir sa fonction* (faire réagir, émouvoir...).
 
 **&#8594;** Il faut donc s'interroger sur sa **lisibilité**, sa réception dans le cadre du fonctionnement prévu.
 
 ---
 class: middle
 
-#Différents types de cartes et de contextes de fonctionnement
+## Différents types de cartes et de contextes de fonctionnement
 
-<p style="float: left;">`r fa("file-image", fill = "darkblue", height = "2em")` </p><p style="margin-left: 140px; padding-top: 20px"> L'image fixe qui doit *communiquer* efficacement des informations spatialisées à un public large.</p>
+<p style="float: left;">`r fa("file-image", fill = "darkblue", height = "2em")` </p><p style="margin-left: 140px; padding-top: 20px"> L'image fixe qui doit <b>communiquer</b> efficacement des informations spatialisées à un public large.</p>
 
-<p style="float: left;">`r fa("file-image", fill = "darkblue", height = "2em")` `r fa("recycle", fill = "darkblue", height = "2em")` `r fa("file-image", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image fixe (mais facilement modifiable) qui doit *me* permettre de comprendre des aspects spatiaux de l'information que je suis en train d'analyser, dans le cadre d'un *processus analytique*.</p>
+<p style="float: left;">`r fa("file-image", fill = "darkblue", height = "2em")` </p><p style="margin-left: 140px; padding-top: 20px"> L'image fixe qui doit <b>faire réfléchir</b> un certain public à propos d'informations spatialisées.</p>
 
-<p style="float: left;">`r fa("file-video", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image *animée*, qui doit communiquer un *processus* spatial évolutif, progressif.</p>
+<p style="float: left;">`r fa("file-image", fill = "darkblue", height = "2em")` `r fa("recycle", fill = "darkblue", height = "2em")` `r fa("file-image", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image facilement modifiable qui doit <b>me</b> permettre visualiser et de comprendre des aspects spatiaux de mon information, dans le cadre d'un <b>processus analytique</b>.</p>
 
-<p style="float: left;">`r fa("tablet-alt", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image *interactive*, qui doit permettre d'*explorer* des composantes spatiales d'une information.</p>
+<p style="float: left;">`r fa("file-video", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image <b>animée</b> ou discursive, qui doit communiquer un <b>processus</b> spatial évolutif, progressif en racontant une histoire.</p>
+
+<p style="float: left;">`r fa("tablet-alt", fill = "darkblue", height = "2em")`</p><p style="margin-left: 140px; padding-top: 20px"> L'image <b>interactive</b>, qui doit permettre d'<b>explorer</b> des composantes spatiales d'une information.</p>
 
 ---
 class: middle
 
-#Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
+# Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
 
 --
 
 - **Quelle adaptation de l'image à la *perception visuelle* humaine ?**
 
-> **&#8594;** Fonctionnement de la perception visuelle des images
+> **&#8594;** Fonctionnement de la perception visuelle des images (graphique et cognitive)
 
 --
 
@@ -222,28 +231,37 @@ class: middle
 
 --
 
-- **Quelle *expérience du public* face à ce type d'image ?**
+- **Quelle complexité cognitive, quelle *expérience du public* face à ce type d'image ?**
 
-> **&#8594;** État de l'art et études de *réception*
+> **&#8594;** État de l'art et études de *réception*, enquêtes.
 
 --
 
 - **Quel *accompagnement* du public pour sa compréhension ?**
 
-> **&#8594;** Les lectures comme processus : animation, *storytelling*, interactivité.
+> **&#8594;** Les lectures comme processus : animation, *storytelling*, interactivité, voire formation.
 
 ---
-#Notions de perception visuelle des images graphiques
+### L'évaluation de la complexité d'une image : typologie
+
+Plusieurs chercheurs ont essayé de mesurer la complexité visuelle, comme indice de la complexité de lecture. Cependant, cette complexité est multiple :
+.center[![complexités](img/schema_complexite.png)]
+
+[&#8594; un article sur le sujet](https://journals.openedition.org/cybergeo/25271)
+
+---
+# 2. Notions de perception visuelle des images graphiques
 
 **&#8594;** Principes de base de la perception visuelle
 
 **&#8594;** Conséquences pour la composition d'images cartographiques
 
 ---
-# La perception visuelle n'est pas automatique, immédiate et parfaite
+# 2.1 La perception visuelle n'est pas automatique, immédiate et parfaite
 (Contrairement à ce que notre cerveau tend à nous faire croire !)
 
 **&#8594;** Quelques illusions d'optique.
+[Pour aller plus loin : les travaux d'Akiyoshi Kitaoka](http://www.ritsumei.ac.jp/~akitaoka/index-e.html)
 
 ---
 class: middle
@@ -270,8 +288,8 @@ class: middle
 > Spirale ou cercles ? : la solution
 
 ---
-#Preception visuelle : plusieurs niveaux d'attention
-**1. La perception pré-attentive**
+# Perception visuelle : plusieurs niveaux d'attention
+** a. La perception pré-attentive**
 
 > [Ch. G. Healey, "Perception in Visualization"](https://www.csc2.ncsu.edu/faculty/healey/PP/).
 
@@ -304,7 +322,7 @@ class: middle
 
 **&#8594;** On retrouve des éléments de la **sémiologie graphique**, des variables rétiniennes
 
-- *Cependant, une image cartographique, une planche d'infographie, est un ensemble plus complexe qu'une variation unique de formes simples : c'est une mise en page.*
+> Cependant, une image cartographique, une planche d'infographie, est un ensemble plus complexe qu'une variation unique de formes simples : c'est une image *mise en page.*
 
 --
 
@@ -315,7 +333,7 @@ class: middle
 - Ces lecture successives peuvent être guidées, encouragées, par une organisation de la page, la **composition graphique**, et par les principes du **storytelling**.
 
 ---
-**2. La perception post-attentive, la prise en compte de formes multiples, organisées : *la composition graphique*  **
+**b. La perception post-attentive, la prise en compte de formes multiples, organisées : *la composition graphique*  **
 
 De nombreuses ressources existent pour guider la composition graphique, souvent sous des appellations comme "*principes*", "*règles*", voir "*lois*".
 
@@ -350,8 +368,8 @@ L'idée est de proposer des *gradients perceptibles* de certaines propriétés p
 - Proximité / espace vide
 
 ---
-##Illustration de ces principes
-À partir des dessins d'(un tutoriel de Visme)[https://visme.co/blog/visual-hierarchy/]
+## Illustration de ces principes
+À partir des dessins d'un [tutoriel de Visme](https://visme.co/blog/visual-hierarchy/)
 
 **Taille / échelle**
 .center[![Taille échelle](img/Scale-organizes-content-by-size.png)]
@@ -382,7 +400,8 @@ class: middle
 
 ---
 
-## Certaines caractéristiques graphiques vont aussi avoir des effets esthétiques
+## Certaines caractéristiques graphiques vont aussi avoir des effets esthétiques/rhétoriques
+
 - L'équilibre / le déséquilibre - la tension
 - Les harmonies colorées
 - La capacité d'évocation du contenu
@@ -398,27 +417,27 @@ Liens : [Poster Khumbu, UMR Passages](http://mappemonde-archive.mgm.fr/num45/moi
 ---
 class: middle
 
-## Une fois ces principes acquis, existe-t'il des outils pour évaluer la lisibilité d'une image facilement ?
+# 3. Existe-t'il des outils pratiques pour évaluer la lisibilité d'une image facilement ?
 
-**&#8594;** Oui ! Grâce aux progrès de la simulation de la vision et de l'intelligence articificielle (aidée par le travail de petites mains...)
+**&#8594; Oui !** Grâce aux progrès de la simulation de la vision et de l'intelligence articificielle (aidée par le travail de petites mains...)
 
 ---
 
-# Comment tester la lisibilité de ses mise en pages?
+## Comment tester la lisibilité de ses mise en pages?
 
 --
 
-- Le flou
+- Le **flou**
 
 --
 
-- La mesure de la complexité visuelle
+- La mesure de la **complexité graphique**
 
 --
 
-- L'évaluation de la complexité de lecture :
+- L'évaluation de la **complexité de lecture** :
   - La simulation de systèmes de perception (saillance visuelle)
-  - Un modèle d'intelligence artificielle entrainé sur des infographies.
+  - Une IA entraînée sur des infographies pour indiquer les zones d'importance visuelle dans une image.
   
 ---
 ### Le flou
@@ -432,14 +451,12 @@ Un outil en ligne : [Pine Tools](https://pinetools.com/blur-image).
 .center[![Suisse floutée](img/flou.jpg)]
 
 ---
-### La mesure de la complexité visuelle
+class: middle
 
-Plusieurs chercheurs ont essayé de mesurer la complexité visuelle, comme indice de la complexité de lecture.
+### L'évaluation de la complexité visuelle
 
-Cependant, cette complexité est multiple :
-
-.center[![complexités](img/types_complexites.jpg)]
-[Article sur le sujet](https://journals.openedition.org/cybergeo/25271)
+Rappel : les différents types de complexité
+.center[![complexités](img/schema_complexite.png)]
 
 ---
 class: middle
@@ -449,6 +466,8 @@ Pour la **complexité graphique**, qui peut être une partie de la complexité v
 - Les quadtrees (subdivisions)
 
 .center[![Quadtrees](img/quadtrees.jpg)]
+
+[&#8594; Le papier : ](https://journals.openedition.org/cybergeo/25271)
 
 ---
 class: middle
@@ -462,7 +481,7 @@ class: middle
 
 ###L'évaluation de la complexité de lecture : des tests utilisateurs
 
-Un [article)(https://www.mdpi.com/2220-9964/4/2/418/htm) de 2015 présente une série d'expériences d'évaluation de la complexité de lecture de cartes topographiques par une enquête basée sur des images.
+Un [article](https://www.mdpi.com/2220-9964/4/2/418/htm) de 2015 présente une série d'expériences d'évaluation de la complexité de lecture de cartes topographiques par une enquête basée sur des images.
 
 .center[![Compressibilité](img/ijgi-04-00418-g006-1024.png)]
 
@@ -471,7 +490,7 @@ class: middle
 
 Ils aboutissent aux conclusions suivantes :
 
-- c'est la **quantité d'information** qui joue le plus sur la complexité de lecture ressentie, notamment la longueur totale des limites d'objets (nombre + complexité)
+- c'est la **quantité d'information** qui joue le plus sur la complexité de lecture ressentie, notamment la somme des longueurs totales des contours d'objets (lignes fines).
 
 --
 
@@ -493,6 +512,13 @@ Voici les résultats des différentes mesures, notez les coefficients r.
 .center[![Résultats enquête](img/enquete_lisibilite_a.jpg)]
 
 ---
+class: middle
+
+Pour évaluer l'effet des petites lignes et contours sur une image cartographique, vous pouvez utiliser [un outil en ligne dédié](https://couleurs.hypotheses.org/468).
+
+.center[![Résultats filtrage des traits fins](img/filtrage_traitsfins.png)]
+
+---
 ### L'évaluation de la complexité de lecture : La simulation de systèmes de perception
 
 Cette technique a connu de rapides développements depuis les années 1990, avec le besoin de mettre au point des robots autonomes, capables d'interpréter leur environnement visuel (pensez aux voitures autonomes).
@@ -501,7 +527,7 @@ Cette technique a connu de rapides développements depuis les années 1990, avec
 
 Des recherches se sont intéressées à la simulation des différents systèmes de la perception visuelle humaine, en aboutissant à des images évaluant les *focalisations oculaires* et la *saillance visuelle* des images.
 
-.center[![Saillance](img/img-14-small480.jpg)]
+.center[![Saillance](img/saillance.jpg)]
 
 --
 
@@ -514,7 +540,7 @@ Avec le développement des capacités des réseaux de neurones, ont été mis au
 
 --
 
-En 2020 des chercheurs d'Adobe (Photoshop) ont réussi à produire une AI capable d'évaluer la saillance visuelles d'images infographiques.
+En 2020 des chercheurs d'*Adobe* (Photoshop) ont réussi à produire une **AI** capable d'évaluer *l'importance visuelle* à l'intérieur des images infographiques.
 
 [Lien vers le site, article + données](http://predimportance.mit.edu/)
 
@@ -532,19 +558,20 @@ Les résultats sont très impressionnants (dernière colonne) :
 ---
 class: middle
 
-Surtout, *le code et les outils pour le faire fonctionner sont disponibles librement* sous la forme d'un bloc-note interactif Python. Ainsi, on peut exécuter en ligne gratuitement via une image Binder déposé sur [**le github #TransCarto**](https://github.com/transcarto/predimportance-public).
+Surtout, *le code et les outils pour le faire fonctionner sont disponibles librement* sous la forme d'un bloc-note interactif Python. Ainsi, on peut exécuter en ligne gratuitement dans une image Binder accessible via un lien sur [**le github #TransCarto**](https://github.com/transcarto/predimportance-public).
 
 > .center[![GitHub TransCarto](img/fork_github_umsi_lj.png)]
 
 ---
 class: middle
 
-## Démonstration
+## Démonstration du modèle d'estimation de l'importance visuelle dans une image
 
 ---
 class: middle
 
-#Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
+# Récapitulons :
+## Les différents besoins de lisibilité
 
 --
 
@@ -560,9 +587,9 @@ class: middle
 
 --
 
-- **Quelle *expérience du public* face à ce type d'image ?**
+- **Quelle complexité cognitive, quelle *expérience du public* face à ce type d'image ?**
 
-> **&#8594;** État de l'art et études de *réception*
+> **&#8594;** État de l'art et études de *réception*, enquêtes.
 
 --
 
@@ -571,36 +598,40 @@ class: middle
 > **&#8594;** Les lectures comme processus : animation, *storytelling*, interactivité.
 
 ---
-## L'évaluation de l'*expérience du public* face à ce type d'image ?
+## L'évaluation de l'*expérience du public*&nbsp;&nbsp;face à ce type d'image ?
 
-C'est la thématique parent pauvre de notre présentation.
+*C'est la thématique parent pauvre de notre présentation.*
 
 --
 
 Elle est traditionnellement issue de l'expérience, mais on peut explorer certains outils comme :
 
-- l'étude de l'état de l'art : que font les autres auteurs pour ce public ?
+- l'étude de **l'état de l'art** : que font les autres cartographes pour ce fonctionnement, avec ce public ?
 > Recherches d'images, de références.
 
 --
 
-- les enquêtes : on fait des tests entre différentes présentations.
+- les **enquêtes** : on réalise des tests entre différentes versions, on étudie les réactions.
 > Exemple des travaux de l'IGN sur les styles des cartes topographiques [(S. Christophe, Ch. Hoareau, J. Ory)](https://www.lemonde.fr/blog/binaire/2019/12/16/les-cartes-cest-trop-style/)]
 
 --
 
-- les études de réception : on regarde comment sont lues et utilisées des illustrations existantes.
-> Peu utilisé en cartogrpahie, mais courant en histoire de l'art.
+- les **études de réception** : on regarde comment sont lues et utilisées des illustrations existantes.
+> Peu utilisé en cartographie, mais courant en histoire de l'art. On recherche les recensions, les descriptions parues.
 
 ---
+#4. De **nouveaux supports** pour mieux accompagner les lecteurs
 
 ## La lecture d'une image cartographique comme processus, et l'accompagnement du public : *storytelling*, animation et interaction.
 
 Les journalistes et documentaristes, d'abord en format vidéo puis web et papier, savent bien que pour présenter une information complexe il faut la présenter progressivement, si possible en *racontant une histoire* : le **storytelling**.
 
---
+On peut le faire *dans* une image en utilisant une mise en page jouant avec le design graphique, mais c'est évidemment bien plus efficace avec un format *animé* ou *interactif*.
 
-Cette possibilité est offerte par le format web, on la retrouve notamment dans :
+---
+class: middle
+
+Cette possibilité est offerte par le web, on la retrouve notamment dans :
 
 - Les articles web utilisant des cartes
 > [Les effets de la pandémie sur le trafic aérien, NYT](https://www.nytimes.com/interactive/2020/02/21/business/coronavirus-airline-travel.html)
@@ -612,3 +643,15 @@ Cette possibilité est offerte par le format web, on la retrouve notamment dans 
 > [L'évolution des habitudes après-Covid19 avec Observable](https://observablehq.com/@bartok32/has-the-pandemic-affected-our-listening-habits?collection=@bartok32/data-driven-stories)
 
 - Les applications en ligne, comme le [*Mobiliscope*](https://mobiliscope.cnrs.fr/fr)
+
+---
+## De nouvelles compétences : UX et UI
+
+> *User eXperience* : prise en compte des attentes des utilisateurs d'un outil interactif (app / wite).
+
+> *User Interface* : ergonomie des interfaces utilisateurs (écrans)
+
+**&#8594;** Ergonomie d'interaction, parcours dans des écrans, utilisations de widgets, composition graphique appliquée aux sites web.
+
+.center[![UX et UI](img/uxui.jpeg)]
+[Source : Les Globules](https://www.lesglobules.com/lux-deux-lettres-un-objectif/globule/)

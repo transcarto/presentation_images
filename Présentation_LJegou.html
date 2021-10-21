@@ -17,17 +17,16 @@
 
 class: center title-slide
 
-&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:4em;width:4.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"/></svg>
-# **Les images**
-## Prenons un peu de recul
+# **Les images cartographiques**
+## Leur lecture, leur fonctionnement :&lt;br&gt; prenons un peu de recul
 
-&lt;br&gt;&lt;br&gt;
 
 #### École thématique TRANSCARTO, Aussois
 
-&lt;br&gt;&lt;br&gt;
+&lt;br&gt;
 
 .left[Laurent Jégou - jegou@univ-tlse2.fr]
 .left[UT2J / UMR LISST-Cieu, 21 oct 2021]
@@ -49,15 +48,15 @@ class: middle
 
 --
 
-2. La **lisibilité** de l'image, comment l'améliorer ?
+2. La **lisibilité** de l'image : principes
 
 --
 
-3. Le **support web**¨ : animation, interaction
+3. Comment **l'évaluer** et **l'améliorer** ?
 
 --
 
-4. Application sur des images de l'école **TransCarto**
+4. De **nouveaux supports** pour mieux accompagner les lecteurs
 
 ---
 # 1. Le contexte
@@ -66,7 +65,7 @@ Pour prendre du recul, il faut s'interroger sur *l'acte de cartographier*, ses a
 
 --
 
-Pendant longtemps, la production de cartes a été comprise, sous-entendue, selon un contexte de communication (théorie de l'information).
+Pendant longtemps, la production de cartes a été comprise, sous-entendue, selon un contexte de communication (théorie de l'information, C. Shannon).
 
 ---
 #Le paradigme de la communication
@@ -95,7 +94,7 @@ class: middle
 
 --
 
-- Elle devait être rapidement lisible, donc utiliser des formes simples
+- Elle devait être rapidement lisible, donc utiliser des formes simples et reconnaissables
 
 &gt;**&amp;#8594;** L'enjeu est donc du côté du langage graphique, à maîtriser par le cartographe et à apprendre du côté des lecteurs.
 
@@ -111,21 +110,27 @@ class: middle
 
 Cette façon de concevoir la production de carte est souvent sous-entendue, elle constitue un *paradigme*, qui est logiquement remis en cause par les évolutions des *pratiques* et des *techniques*.
 
-Elle présente la cartographie selon un angle *positiviste*, voire scientiste, ce qui évacue toute une série d'autres fonctionnements de la carte...
+Elle présente la cartographie selon un angle *positiviste*, voire scientiste, ce qui évacue toute une série d'autres *fonctionnements* de la carte...
+
+[Un ouvrage essentiel : "Cartography, the Ideal and its History" de M.H. Edney](https://journals.openedition.org/mappemonde/1711)
+
+.center[![M.H. Edney](img/edney_cartography_the_ideal.jpg)]
 
 ---
 
-- la carte **outil de pouvoir**, performative, de propagande, menteuse (vision *post-moderniste*, B. Harley)
+- la carte **performative**, qui vise à faire réagir, de propagande, rhétorique (vision *post-moderniste*, B. Harley)
 
 .center[![Brian J. Harley, The New Nature of Maps](img/thenewnatureofmaps.jpg)]
 &gt; Brian J. Harley, The New Nature of Maps, 2001
 
 ---
 
-- la carte comme **outil d'analyse**, moyen de découvrir des phénomènes et des relations, dans un *processus d'exploration* (paradigme *analytique*, W. Tobler, K. Clarke, vers la géomatique et les SIG)
+- la carte comme **outil d'analyse**, moyen de découvrir des phénomènes et des relations, dans un *processus d'exploration*, de **&amp;#8594;** **transformation** (paradigme *analytique*, W. Tobler, K. Clarke, vers la géomatique et les SIG)
 
-.center[![K. Clarke, Analytical and Computer Cartography](img/clarke.jpg)]
+.center[![W. Tobler et K. Clarke](img/ToblerClarke.jpg)]
+
 &gt; K. Clarke, Analytical and Computer Cartography, 1990.
+
 ---
 
 - la carte comme **outil d'organisation d'une communauté** sur son territoire (paradigme *participatif*, M. Noucher, Th. Joliveau)
@@ -135,20 +140,20 @@ Elle présente la cartographie selon un angle *positiviste*, voire scientiste, c
 
 ---
 
-- la carte comme **outil de visualisation de *son* propre territoire**, adaptée, mise à jour et centrée sur sa position (paradigme de *l'égo-cartographie*).
+- la carte comme **outil de visualisation de *son* propre territoire et de navigation**, adaptée et centrée sur sa position actuelle (paradigme de *l'égo-cartographie*).
 
 .center[![Smarthpone](img/maps-google-maps-navigation-maps-app-map-location.jpg)]
 
 ---
 
-- la carte *décorative* a valeur esthétique, historique, émotive...
+- la carte *décorative* a valeur esthétique, historique, émotive, (d'où son utilisation dans des publicités...).
 
 .center[![Carte ancienne Air France L. Boucher 1964](img/airfrance_boucher_bleu.jpg)]
 &gt;L. Boucher, affiche publicitaire Air France, 1937
 
 ---
 
-- la carte *imaginaire* ou *poétique*, aussi à valeur esthétique.
+- la carte *imaginaire* ou *poétique*, aussi à valeur esthétique, rhétorique, qui vise à faire réfléchir. Souvent, on ne la comprend pas immédiatement.
 
 .center[![Terra Forma](img/terra_forma.jpg)]
 &gt; Terra Forma, F. Aït-Touati, A. Arènes, A. Grégoire, éditions B42, 2019.
@@ -156,9 +161,11 @@ Elle présente la cartographie selon un angle *positiviste*, voire scientiste, c
 ---
 class: middle
 
-#Prendre du recul
+# Prendre du recul
 
-Ces réflexions permettent se poser des questions de contexte, pour mieux comprendre les questions de lisibilité :
+.center[<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:2em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"/></svg>]
+
+Ces réflexions permettent se poser des questions de **contexte**, pour mieux comprendre les questions de lisibilité :
 
 --
 
@@ -166,77 +173,88 @@ Ces réflexions permettent se poser des questions de contexte, pour mieux compre
 
 --
 
-- À quoi doit *servir* ma carte ?
+- À quoi doit *servir* ma carte, comment doit-on y réagir ?
 
 --
 
-- À quel *public* est-elle destinée ?
+- À quel *public* est-elle destinée ? Que doit-il savoir pour la comprendre ?
 
 --
 
-- Comment *fonctionne* ma carte ?
+- Au final, comment *fonctionne* ma carte ?
 
 ---
 class: middle
 
-**&amp;#8594;** Selon ces différents positionnements, la carte va devoir s'adapter pour être **efficace**, au sens de J. Bertin (communication), ou, plus généralement du design, c'est à dire *accomplir sa fonction*.
+**&amp;#8594;** Selon ces différents positionnements, la carte va devoir s'adapter pour être **efficace**, au sens de J. Bertin (communication), ou, plus généralement du *design*, c'est à dire *accomplir sa fonction* (faire réagir, émouvoir...).
 
 **&amp;#8594;** Il faut donc s'interroger sur sa **lisibilité**, sa réception dans le cadre du fonctionnement prévu.
 
 ---
 class: middle
 
-#Différents types de cartes et de contextes de fonctionnement
+## Différents types de cartes et de contextes de fonctionnement
 
-&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg> &lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image fixe qui doit *communiquer* efficacement des informations spatialisées à un public large.&lt;/p&gt;
+&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg> &lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image fixe qui doit &lt;b&gt;communiquer&lt;/b&gt; efficacement des informations spatialisées à un public large.&lt;/p&gt;
 
-&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:2em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M184.561 261.903c3.232 13.997-12.123 24.635-24.068 17.168l-40.736-25.455-50.867 81.402C55.606 356.273 70.96 384 96.012 384H148c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12H96.115c-75.334 0-121.302-83.048-81.408-146.88l50.822-81.388-40.725-25.448c-12.081-7.547-8.966-25.961 4.879-29.158l110.237-25.45c8.611-1.988 17.201 3.381 19.189 11.99l25.452 110.237zm98.561-182.915l41.289 66.076-40.74 25.457c-12.051 7.528-9 25.953 4.879 29.158l110.237 25.45c8.672 1.999 17.215-3.438 19.189-11.99l25.45-110.237c3.197-13.844-11.99-24.719-24.068-17.168l-40.687 25.424-41.263-66.082c-37.521-60.033-125.209-60.171-162.816 0l-17.963 28.766c-3.51 5.62-1.8 13.021 3.82 16.533l33.919 21.195c5.62 3.512 13.024 1.803 16.536-3.817l17.961-28.743c12.712-20.341 41.973-19.676 54.257-.022zM497.288 301.12l-27.515-44.065c-3.511-5.623-10.916-7.334-16.538-3.821l-33.861 21.159c-5.62 3.512-7.33 10.915-3.818 16.536l27.564 44.112c13.257 21.211-2.057 48.96-27.136 48.96H320V336.02c0-14.213-17.242-21.383-27.313-11.313l-80 79.981c-6.249 6.248-6.249 16.379 0 22.627l80 79.989C302.689 517.308 320 510.3 320 495.989V448h95.88c75.274 0 121.335-82.997 81.408-146.88z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image fixe (mais facilement modifiable) qui doit *me* permettre de comprendre des aspects spatiaux de l'information que je suis en train d'analyser, dans le cadre d'un *processus analytique*.&lt;/p&gt;
+&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg> &lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image fixe qui doit &lt;b&gt;faire réfléchir&lt;/b&gt; un certain public à propos d'informations spatialisées.&lt;/p&gt;
 
-&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image *animée*, qui doit communiquer un *processus* spatial évolutif, progressif.&lt;/p&gt;
+&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:2em;width:2em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M184.561 261.903c3.232 13.997-12.123 24.635-24.068 17.168l-40.736-25.455-50.867 81.402C55.606 356.273 70.96 384 96.012 384H148c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12H96.115c-75.334 0-121.302-83.048-81.408-146.88l50.822-81.388-40.725-25.448c-12.081-7.547-8.966-25.961 4.879-29.158l110.237-25.45c8.611-1.988 17.201 3.381 19.189 11.99l25.452 110.237zm98.561-182.915l41.289 66.076-40.74 25.457c-12.051 7.528-9 25.953 4.879 29.158l110.237 25.45c8.672 1.999 17.215-3.438 19.189-11.99l25.45-110.237c3.197-13.844-11.99-24.719-24.068-17.168l-40.687 25.424-41.263-66.082c-37.521-60.033-125.209-60.171-162.816 0l-17.963 28.766c-3.51 5.62-1.8 13.021 3.82 16.533l33.919 21.195c5.62 3.512 13.024 1.803 16.536-3.817l17.961-28.743c12.712-20.341 41.973-19.676 54.257-.022zM497.288 301.12l-27.515-44.065c-3.511-5.623-10.916-7.334-16.538-3.821l-33.861 21.159c-5.62 3.512-7.33 10.915-3.818 16.536l27.564 44.112c13.257 21.211-2.057 48.96-27.136 48.96H320V336.02c0-14.213-17.242-21.383-27.313-11.313l-80 79.981c-6.249 6.248-6.249 16.379 0 22.627l80 79.989C302.689 517.308 320 510.3 320 495.989V448h95.88c75.274 0 121.335-82.997 81.408-146.88z"/></svg> <svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059a24 24 0 0 1 16.97 7.029l97.941 97.941a24.002 24.002 0 0 1 7.03 16.971zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zm-135.455 16c26.51 0 48 21.49 48 48s-21.49 48-48 48-48-21.49-48-48 21.491-48 48-48zm208 240h-256l.485-48.485L104.545 328c4.686-4.686 11.799-4.201 16.485.485L160.545 368 264.06 264.485c4.686-4.686 12.284-4.686 16.971 0L320.545 304v112z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image facilement modifiable qui doit &lt;b&gt;me&lt;/b&gt; permettre visualiser et de comprendre des aspects spatiaux de mon information, dans le cadre d'un &lt;b&gt;processus analytique&lt;/b&gt;.&lt;/p&gt;
 
-&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:2em;width:1.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M400 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM224 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm176-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h328c6.6 0 12 5.4 12 12v312z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image *interactive*, qui doit permettre d'*explorer* des composantes spatiales d'une information.&lt;/p&gt;
+&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 384 512" style="height:2em;width:1.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM224 136V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248c-13.2 0-24-10.8-24-24zm96 144.016v111.963c0 21.445-25.943 31.998-40.971 16.971L224 353.941V392c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V280c0-13.255 10.745-24 24-24h112c13.255 0 24 10.745 24 24v38.059l55.029-55.013c15.011-15.01 40.971-4.491 40.971 16.97z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image &lt;b&gt;animée&lt;/b&gt; ou discursive, qui doit communiquer un &lt;b&gt;processus&lt;/b&gt; spatial évolutif, progressif en racontant une histoire.&lt;/p&gt;
+
+&lt;p style="float: left;"&gt;<svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:2em;width:1.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:darkblue;overflow:visible;position:relative;"><path d="M400 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM224 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm176-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h328c6.6 0 12 5.4 12 12v312z"/></svg>&lt;/p&gt;&lt;p style="margin-left: 140px; padding-top: 20px"&gt; L'image &lt;b&gt;interactive&lt;/b&gt;, qui doit permettre d'&lt;b&gt;explorer&lt;/b&gt; des composantes spatiales d'une information.&lt;/p&gt;
 
 ---
 class: middle
 
-#Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
+# Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
 
 --
 
-- Quelle adaptation de l'image à la *perception visuelle* humaine ?
+- **Quelle adaptation de l'image à la *perception visuelle* humaine ?**
 
-&gt; **&amp;#8594;** Fonctionnement de la perception visuelle des images
+&gt; **&amp;#8594;** Fonctionnement de la perception visuelle des images (graphique et cognitive)
 
 --
 
-- Quelle adaptation de l'image à une bonne expression de son contenu pour sa fonction ?
+- **Quelle adaptation de l'image à une bonne expression de son contenu pour sa fonction ?**
 
 &gt; **&amp;#8594;** Conception et *design graphique*
 
 --
 
-- Quelle *expérience du public* face à ce type d'image ?
+- **Quelle complexité cognitive, quelle *expérience du public* face à ce type d'image ?**
 
-&gt; **&amp;#8594;** État de l'art et études de *réception*
+&gt; **&amp;#8594;** État de l'art et études de *réception*, enquêtes.
 
 --
 
-- Quel *accompagnement* du public pour sa compréhension ?
+- **Quel *accompagnement* du public pour sa compréhension ?**
 
-&gt; **&amp;#8594;** Les lectures comme processus : animation, *storytelling*, interactivité.
+&gt; **&amp;#8594;** Les lectures comme processus : animation, *storytelling*, interactivité, voire formation.
 
 ---
-#Notions de perception visuelle des images graphiques
+### L'évaluation de la complexité d'une image : typologie
+
+Plusieurs chercheurs ont essayé de mesurer la complexité visuelle, comme indice de la complexité de lecture. Cependant, cette complexité est multiple :
+.center[![complexités](img/schema_complexite.png)]
+
+[&amp;#8594; un article sur le sujet](https://journals.openedition.org/cybergeo/25271)
+
+---
+# 2. Notions de perception visuelle des images graphiques
 
 **&amp;#8594;** Principes de base de la perception visuelle
 
 **&amp;#8594;** Conséquences pour la composition d'images cartographiques
 
 ---
-# La perception visuelle n'est pas automatique, immédiate et parfaite
+# 2.1 La perception visuelle n'est pas automatique, immédiate et parfaite
 (Contrairement à ce que notre cerveau tend à nous faire croire !)
 
 **&amp;#8594;** Quelques illusions d'optique.
+[Pour aller plus loin : les travaux d'Akiyoshi Kitaoka](http://www.ritsumei.ac.jp/~akitaoka/index-e.html)
 
 ---
 class: middle
@@ -263,8 +281,8 @@ class: middle
 &gt; Spirale ou cercles ? : la solution
 
 ---
-#Preception visuelle : plusieurs niveaux d'attention
-**1. La perception pré-attentive**
+# Perception visuelle : plusieurs niveaux d'attention
+** a. La perception pré-attentive**
 
 &gt; [Ch. G. Healey, "Perception in Visualization"](https://www.csc2.ncsu.edu/faculty/healey/PP/).
 
@@ -297,7 +315,7 @@ class: middle
 
 **&amp;#8594;** On retrouve des éléments de la **sémiologie graphique**, des variables rétiniennes
 
-- *Cependant, une image cartographique, une planche d'infographie, est un ensemble plus complexe qu'une variation unique de formes simples : c'est une mise en page.*
+&gt; Cependant, une image cartographique, une planche d'infographie, est un ensemble plus complexe qu'une variation unique de formes simples : c'est une image *mise en page.*
 
 --
 
@@ -308,7 +326,7 @@ class: middle
 - Ces lecture successives peuvent être guidées, encouragées, par une organisation de la page, la **composition graphique**, et par les principes du **storytelling**.
 
 ---
-**2. La perception post-attentive, la prise en compte de formes multiples, organisées : *la composition graphique*  **
+**b. La perception post-attentive, la prise en compte de formes multiples, organisées : *la composition graphique*  **
 
 De nombreuses ressources existent pour guider la composition graphique, souvent sous des appellations comme "*principes*", "*règles*", voir "*lois*".
 
@@ -343,8 +361,8 @@ L'idée est de proposer des *gradients perceptibles* de certaines propriétés p
 - Proximité / espace vide
 
 ---
-##Illustration de ces principes
-À partir des dessins d'(un tutoriel de Visme)[https://visme.co/blog/visual-hierarchy/]
+## Illustration de ces principes
+À partir des dessins d'un [tutoriel de Visme](https://visme.co/blog/visual-hierarchy/)
 
 **Taille / échelle**
 .center[![Taille échelle](img/Scale-organizes-content-by-size.png)]
@@ -375,7 +393,8 @@ class: middle
 
 ---
 
-## Certaines caractéristiques graphiques vont aussi avoir des effets esthétiques
+## Certaines caractéristiques graphiques vont aussi avoir des effets esthétiques/rhétoriques
+
 - L'équilibre / le déséquilibre - la tension
 - Les harmonies colorées
 - La capacité d'évocation du contenu
@@ -391,27 +410,27 @@ Liens : [Poster Khumbu, UMR Passages](http://mappemonde-archive.mgm.fr/num45/moi
 ---
 class: middle
 
-## Une fois ces principes acquis, existe-t'il des outils pour évaluer la lisibilité d'une image facilement ?
+# 3. Existe-t'il des outils pratiques pour évaluer la lisibilité d'une image facilement ?
 
-**&amp;#8594;** Oui ! Grâce aux progrès de la simulation de la vision et de l'intelligence articificielle (aidée par le travail de petites mains...)
+**&amp;#8594; Oui !** Grâce aux progrès de la simulation de la vision et de l'intelligence articificielle (aidée par le travail de petites mains...)
 
 ---
 
-# Comment tester la lisibilité de ses mise en pages?
+## Comment tester la lisibilité de ses mise en pages?
 
 --
 
-- Le flou
+- Le **flou**
 
 --
 
-- La mesure de la complexité visuelle
+- La mesure de la **complexité graphique**
 
 --
 
-- L'évaluation de la complexité de lecture :
+- L'évaluation de la **complexité de lecture** :
   - La simulation de systèmes de perception (saillance visuelle)
-  - Un modèle d'intelligence artificielle entrainé sur des infographies.
+  - Une IA entraînée sur des infographies pour indiquer les zones d'importance visuelle dans une image.
   
 ---
 ### Le flou
@@ -425,14 +444,12 @@ Un outil en ligne : [Pine Tools](https://pinetools.com/blur-image).
 .center[![Suisse floutée](img/flou.jpg)]
 
 ---
-### La mesure de la complexité visuelle
+class: middle
 
-Plusieurs chercheurs ont essayé de mesurer la complexité visuelle, comme indice de la complexité de lecture.
+### L'évaluation de la complexité visuelle
 
-Cependant, cette complexité est multiple :
-
-.center[![complexités](img/types_complexites.jpg)]
-[Article sur le sujet](https://journals.openedition.org/cybergeo/25271)
+Rappel : les différents types de complexité
+.center[![complexités](img/schema_complexite.png)]
 
 ---
 class: middle
@@ -442,6 +459,8 @@ Pour la **complexité graphique**, qui peut être une partie de la complexité v
 - Les quadtrees (subdivisions)
 
 .center[![Quadtrees](img/quadtrees.jpg)]
+
+[&amp;#8594; Le papier : ](https://journals.openedition.org/cybergeo/25271)
 
 ---
 class: middle
@@ -455,7 +474,7 @@ class: middle
 
 ###L'évaluation de la complexité de lecture : des tests utilisateurs
 
-Un [article)(https://www.mdpi.com/2220-9964/4/2/418/htm) de 2015 présente une série d'expériences d'évaluation de la complexité de lecture de cartes topographiques par une enquête basée sur des images.
+Un [article](https://www.mdpi.com/2220-9964/4/2/418/htm) de 2015 présente une série d'expériences d'évaluation de la complexité de lecture de cartes topographiques par une enquête basée sur des images.
 
 .center[![Compressibilité](img/ijgi-04-00418-g006-1024.png)]
 
@@ -464,7 +483,7 @@ class: middle
 
 Ils aboutissent aux conclusions suivantes :
 
-- c'est la **quantité d'information** qui joue le plus sur la complexité de lecture ressentie, notamment la longueur totale des limites d'objets (nombre + complexité)
+- c'est la **quantité d'information** qui joue le plus sur la complexité de lecture ressentie, notamment la somme des longueurs totales des contours d'objets (lignes fines).
 
 --
 
@@ -486,6 +505,13 @@ Voici les résultats des différentes mesures, notez les coefficients r.
 .center[![Résultats enquête](img/enquete_lisibilite_a.jpg)]
 
 ---
+class: middle
+
+Pour évaluer l'effet des petites lignes et contours sur une image cartographique, vous pouvez utiliser [un outil en ligne dédié](https://couleurs.hypotheses.org/468).
+
+.center[![Résultats filtrage des traits fins](img/filtrage_traitsfins.png)]
+
+---
 ### L'évaluation de la complexité de lecture : La simulation de systèmes de perception
 
 Cette technique a connu de rapides développements depuis les années 1990, avec le besoin de mettre au point des robots autonomes, capables d'interpréter leur environnement visuel (pensez aux voitures autonomes).
@@ -494,7 +520,7 @@ Cette technique a connu de rapides développements depuis les années 1990, avec
 
 Des recherches se sont intéressées à la simulation des différents systèmes de la perception visuelle humaine, en aboutissant à des images évaluant les *focalisations oculaires* et la *saillance visuelle* des images.
 
-.center[![Saillance](img/img-14-small480.jpg)]
+.center[![Saillance](img/saillance.jpg)]
 
 --
 
@@ -507,7 +533,7 @@ Avec le développement des capacités des réseaux de neurones, ont été mis au
 
 --
 
-En 2020 des chercheurs d'Adobe (Photoshop) ont réussi à produire une AI capable d'évaluer la saillance visuelles d'images infographiques.
+En 2020 des chercheurs d'*Adobe* (Photoshop) ont réussi à produire une **AI** capable d'évaluer *l'importance visuelle* à l'intérieur des images infographiques.
 
 [Lien vers le site, article + données](http://predimportance.mit.edu/)
 
@@ -525,19 +551,20 @@ Les résultats sont très impressionnants (dernière colonne) :
 ---
 class: middle
 
-Surtout, *le code et les outils pour le faire fonctionner sont disponibles librement* sous la forme d'un bloc-note interactif Python. Ainsi, on peut exécuter en ligne gratuitement via une image Binder déposé sur [**le github #TransCarto**](https://github.com/transcarto/predimportance-public).
+Surtout, *le code et les outils pour le faire fonctionner sont disponibles librement* sous la forme d'un bloc-note interactif Python. Ainsi, on peut exécuter en ligne gratuitement dans une image Binder accessible via un lien sur [**le github #TransCarto**](https://github.com/transcarto/predimportance-public).
 
 &gt; .center[![GitHub TransCarto](img/fork_github_umsi_lj.png)]
 
 ---
 class: middle
 
-## Démonstration
+## Démonstration du modèle d'estimation de l'importance visuelle dans une image
 
 ---
 class: middle
 
-#Différents besoins de lisibilité des images cartographiques, selon leur fonctionnement
+# Récapitulons :
+## Les différents besoins de lisibilité
 
 --
 
@@ -553,9 +580,9 @@ class: middle
 
 --
 
-- **Quelle *expérience du public* face à ce type d'image ?**
+- **Quelle complexité cognitive, quelle *expérience du public* face à ce type d'image ?**
 
-&gt; **&amp;#8594;** État de l'art et études de *réception*
+&gt; **&amp;#8594;** État de l'art et études de *réception*, enquêtes.
 
 --
 
@@ -564,36 +591,40 @@ class: middle
 &gt; **&amp;#8594;** Les lectures comme processus : animation, *storytelling*, interactivité.
 
 ---
-## L'évaluation de l'*expérience du public* face à ce type d'image ?
+## L'évaluation de l'*expérience du public*&amp;nbsp;&amp;nbsp;face à ce type d'image ?
 
-C'est la thématique parent pauvre de notre présentation.
+*C'est la thématique parent pauvre de notre présentation.*
 
 --
 
 Elle est traditionnellement issue de l'expérience, mais on peut explorer certains outils comme :
 
-- l'étude de l'état de l'art : que font les autres auteurs pour ce public ?
+- l'étude de **l'état de l'art** : que font les autres cartographes pour ce fonctionnement, avec ce public ?
 &gt; Recherches d'images, de références.
 
 --
 
-- les enquêtes : on fait des tests entre différentes présentations.
-&gt; Exemple des travaux de l'IGN sur les styles des cartes topographiques (S. Christophe, Ch. Hoareau, J. Ory)
+- les **enquêtes** : on réalise des tests entre différentes versions, on étudie les réactions.
+&gt; Exemple des travaux de l'IGN sur les styles des cartes topographiques [(S. Christophe, Ch. Hoareau, J. Ory)](https://www.lemonde.fr/blog/binaire/2019/12/16/les-cartes-cest-trop-style/)]
 
 --
 
-- les études de réception : on regarde comment sont lues et utilisées des illustrations existantes.
-&gt; Peu utilisé en cartogrpahie, mais courant en histoire de l'art.
+- les **études de réception** : on regarde comment sont lues et utilisées des illustrations existantes.
+&gt; Peu utilisé en cartographie, mais courant en histoire de l'art. On recherche les recensions, les descriptions parues.
 
 ---
+#4. De **nouveaux supports** pour mieux accompagner les lecteurs
 
 ## La lecture d'une image cartographique comme processus, et l'accompagnement du public : *storytelling*, animation et interaction.
 
 Les journalistes et documentaristes, d'abord en format vidéo puis web et papier, savent bien que pour présenter une information complexe il faut la présenter progressivement, si possible en *racontant une histoire* : le **storytelling**.
 
---
+On peut le faire *dans* une image en utilisant une mise en page jouant avec le design graphique, mais c'est évidemment bien plus efficace avec un format *animé* ou *interactif*.
 
-Cette possibilité est offerte par le format web, on la retrouve notamment dans :
+---
+class: middle
+
+Cette possibilité est offerte par le web, on la retrouve notamment dans :
 
 - Les articles web utilisant des cartes
 &gt; [Les effets de la pandémie sur le trafic aérien, NYT](https://www.nytimes.com/interactive/2020/02/21/business/coronavirus-airline-travel.html)
@@ -602,9 +633,21 @@ Cette possibilité est offerte par le format web, on la retrouve notamment dans 
 &gt; [Le voyage d'Arya](https://storymap.knightlab.com/examples/aryas-journey/)
 
 - Les carnets interactifs : Jupyter (R, Python), Observable (D3, JavaScript).
-&gt; [L'histoire d'un groupe social avec Observable](https://observablehq.com/collection/@mtsvelik/book-club-what-our-posts-say-about-us)
+&gt; [L'évolution des habitudes après-Covid19 avec Observable](https://observablehq.com/@bartok32/has-the-pandemic-affected-our-listening-habits?collection=@bartok32/data-driven-stories)
 
 - Les applications en ligne, comme le [*Mobiliscope*](https://mobiliscope.cnrs.fr/fr)
+
+---
+## De nouvelles compétences : UX et UI
+
+&gt; *User eXperience* : prise en compte des attentes des utilisateurs d'un outil interactif (app / wite).
+
+&gt; *User Interface* : ergonomie des interfaces utilisateurs (écrans)
+
+**&amp;#8594;** Ergonomie d'interaction, parcours dans des écrans, utilisations de widgets, composition graphique appliquée aux sites web.
+
+.center[![UX et UI](img/uxui.jpeg)]
+[Source : Les Globules](https://www.lesglobules.com/lux-deux-lettres-un-objectif/globule/)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
